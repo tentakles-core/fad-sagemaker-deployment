@@ -17,8 +17,8 @@ logger = logging.getLogger()
 bucketname = "sagemaker-fad"
 itemname = "model.pth"
 s3 = boto3.resource('s3',
-                    aws_access_key_id="AKIA3PWWNODKJNDWZ6B7",
-                    aws_secret_access_key= "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")
+                    aws_access_key_id="---",
+                    aws_secret_access_key= "---")
 # Downloaded model
 obj = s3.Object(bucketname, itemname).download_file('model.pth')
 
